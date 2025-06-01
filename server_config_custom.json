@@ -1,0 +1,25 @@
+{
+    "mcpServers": {
+        
+        "fetch": {
+            "command": "uvx",
+            "args": ["mcp-server-fetch"]
+        },
+        "github": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "-e",
+          "GITHUB_PERSONAL_ACCESS_TOKEN",
+          "ghcr.io/github/github-mcp-server"
+        ],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+        }
+      }
+
+    }
+}
+  
